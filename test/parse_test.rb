@@ -1104,7 +1104,7 @@ class ParseTest < Minitest::Test
   start_date = Date.new(2021, 12, 6)
   end_date_june = Date.new(2022, 6, 1)
   days_per_month =
-    Reading::Parsing::Attributes::Experiences::HistoryTransformer::AVERAGE_DAYS_IN_A_MONTH
+    Reading::Parsing::Attributes::Experiences::ExperienceBuilder::AVERAGE_DAYS_IN_A_MONTH
   almost_6_months = (end_date_june - start_date + 1).to_i / days_per_month
   minutes_175 = almost_6_months * 30
   a_frequency = item_hash(
